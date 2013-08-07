@@ -1,0 +1,44 @@
+.well-fixed{
+  padding-bottom: 28px;
+}
+.notification-component
+{
+  .readnotification;
+  position: relative;
+  >*:last-child
+  {
+    padding-top:@padding-base-vertical;
+    font-size:@font-size-small;
+  }
+}
+.notification-dropdown{
+  > div{
+    .notification-component;
+  }
+  >hr{
+    margin:@padding-base-vertical;
+  }
+  >button:last-child
+  {
+    padding-bottom: 5px;
+    width: 100%;
+  }
+}
+.btn-notification-group {
+  font-size:@font-size-small;
+  padding-top:@padding-base-vertical;
+}
+.readnotification
+{
+  .opacity(.2);
+  /*
+  > button{
+    .opacity(1);
+  }*/
+}
+.unreadnotification {
+    .opacity(1) !important;
+  > button{
+    .opacity(0.2) !important;
+  }
+}

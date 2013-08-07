@@ -1,5 +1,6 @@
 @import "forms-custom.less";
 @import "spans.less";
+@import "notifications.less";
 
 @media (max-width: @screen-xsmall)
 {
@@ -14,21 +15,42 @@
     margin-right:0%;
   }
 }
-
+.notification-bage {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  background-color: @brand-danger;
+}
 // Fix
 .btn.text-left
 {
   text-align: left;
   padding-left: @padding-small-horizontal;
 }
-
+.close {
+  &:hover,
+  &:focus {
+    .opacity(.5) !important;
+  }
+}
 // Content dropdown
 .dropdown-content-menu
 {
+  left:auto;
+  right:auto;
+  width: 100%;
   padding: 15px;
   min-width: 300px;
 }
-
+.test{
+  float: right;
+  font-size: (@font-size-base * 1.5);
+  font-weight: bold;
+  line-height: 1;
+  color: @close-color;
+  text-shadow: @close-text-shadow;
+  .opacity(.2);
+}
 /*
  * May be added to support screen size <300px
 
