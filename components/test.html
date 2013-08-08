@@ -34,20 +34,24 @@
         <div class="nav-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a data-toggle="modal" href="#loginModal">Profile</a></li>
-                <li><a href="#">Link</a></li>
+                <li><a href="#">Nav1</a></li>
+                <li><a href="#">Nav2</a></li>
+                <li><a href="#">Nav3</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="#" ><img class="nav-bar-image" src="http://demo.ribbl.com/install/687_753aa/files/avr/avatars/thumb30/2_9ef808beb6afb3a9da5f38048b0ac331_030423_1887_5299_xams.jpg"> Michael</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-envelope-alt"></i><span class="badge notification-bage">3</span></b></a>
                     <!--Notification Dropdown-->
                     <div class="dropdown-menu dropdown-content-menu notification-dropdown">
-                        <div class="notification unreadnotification">
+                        <div class="notification notification-unread">
                             <button type="button" class="close">&times;</button>
                             <div class="notification-content">
                                 Ein Update steht zur Installation bereit!
                             </div>
-                            <div>
-                              <i class="icon-envelope-alt unread-notification"></i> on Saturday
-                            </div>
+                            <small>
+                                <i class="icon-envelope-alt"></i> on Saturday
+                            </small>
                         </div>
                         <hr>
                         <div class="notification">
@@ -55,9 +59,9 @@
                             <div class="notification-content">
                                 Ein Update steht zur Installation bereit!
                             </div>
-                            <div>
+                            <small>
                                 <i class="icon-envelope-alt"></i> on Saturday
-                            </div>
+                            </small>
                         </div>
                         <hr>
                         <div class="notification">
@@ -69,22 +73,49 @@
                                     <button type="submit" class="btn btn-default btn-xs">Dein Profil</button>
                                 </div>
                             </div>
-                            <div>
+                            <small>
                                 <i class="icon-envelope-alt"></i> six hours ago
-                            </div>
+                            </small>
                         </div>
                         <hr>
-
-                             <button type="submit" class="btn btn-primary btn-sm text-center">See all</i></button>
+                        <a href="#" class="btn btn-block btn-primary btn-sm">See all</a>
                     </div>
                     <!--Notification Dropdown-->
                 </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></a>
+                    <ul class="dropdown-menu full-width" role="menu" aria-labelledby="dropdownMenu">
+                        <li><a tabindex="-1" href="#">General Settings</a></li>
+                        <li><a tabindex="-1" href="#">Account Settings</a></li>
+                        <li><a tabindex="-1" href="#">Privacy Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">Log out</a></li>
+                    </ul>
+                </li>
             </ul>
-            <form class="navbar-form pull-left" action="">
-                <input type="text" class="form-control col-lg-8" placeholder="Search">
-            </form>
+        </div>
+    </div>
+</div>
+<!--Navbar-->
+
+<!--Navbar2-->
+<div class="navbar horicontal-center-80 border-large" style="margin-top: 30%;">
+    <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ribbl</a>
+        <div class="nav-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a data-toggle="modal" href="#loginModal">Cant go here</a></li>
+                <li><a href="#">Nav1</a></li>
+                <li><a href="#">Nav2</a></li>
+            </ul>
             <ul class="nav navbar-nav pull-right">
-                <li><a href="#">Link</a></li>
+                <li><a href="#">Sign Up</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In <b class="caret"></b></a>
                     <!--Dropdown Login-->
@@ -120,7 +151,31 @@
         </div>
     </div>
 </div>
-<!--Navbar-->
+<!--Navbar2-->
+<div class="a-group">
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+    <input type="text" class="form-control" placeholder="Email">
+    <input type="password" class="form-control" placeholder="Password">
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+</div>
 <!-- Modal for signing in-->
 <div class="modal fade" id="loginModal">
     <div class="modal-dialog text-center">
@@ -129,7 +184,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4>You are not logged in!</h4>
             </div>
-            <div class="modal-body padding-top-none">
+            <div class="modal-body">
                 <div><h4>Log in here:</h4></div>
                 <form class="form-inline horicontal-center-80">
                     <div>
@@ -138,14 +193,16 @@
                             <input type="password" class="form-control" placeholder="Password">
                         </div>
                         <div class="form-group pull-left">
-                            <div class="checkbox form-group margin-vertical-large">
+                            <div class="checkbox">
                                 <label>
                                     <input type="checkbox"> Remember me
                                 </label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary full-width margin-vertical-large"><strong>Log in</strong></button>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary full-width"><strong>Log in</strong></button>
+                            </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-info horicontal-center-80">Need a account? Sign up here.</button>
                             </div>
@@ -153,17 +210,14 @@
                                 <div class="text-center">or login with</div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-4"><button type="button" class="btn btn-default form-control full-width margin-vertical-base"><div class="pull-left full-height"><img class="full-height" src="https://fbstatic-a.akamaihd.net/rsrc.php/yl/r/H3nktOa7ZMg.ico"> Facebook</div></button></div>
-                                <div class="col-sm-4"><button type="button" class="btn btn-default form-control full-width margin-vertical-base"><div class="pull-left full-height"><img class="full-height" src="http://findicons.com/files/icons/2229/social_media_mini/48/google.png"> Google</div></button></div>
-                                <div class="col-sm-4"><button type="button" class="btn btn-default form-control full-width margin-vertical-base"><div class="pull-left full-height"><img class="full-height" src="https://abs.twimg.com/favicons/favicon.ico"> Twitter</div></button></div>
+                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left"><i class="icon-facebook-sign"></i> Facebook</button></div>
+                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left"><i class="icon-google-plus-sign"></i> Google</button></div>
+                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left"><i class="icon-twitter-sign"></i> Twitter</button></div>
                             </div>
                         </div>
 
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>
