@@ -22,17 +22,33 @@ $(function() {
     search.addElement("categories");
     search.addElement("relevance");
     search.addElement("time");
-    /*
-    $( "#options a").on("click", function() {
-        var $text = $(this).html();
 
-
-
-        var $button = $(this).parents("button");
-        console.log($text);
-        console.log($button);
-        $button.html($text);
-        $button.append(" <i class=\"icon-sort-by-attributes\"></i>");
+    $('#navbar a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
     });
-    */
+
+    var list = $("#navbar");
+    var listItems = list.children();
+
+    var maxSize = 5;
+    var actualSize = listItems.size();
+
+    if(actualSize > maxSize) {
+
+        var items = "";
+        console.log("I GOT: MAXSIZE: "+maxSize+" ACTUALSIZE:"+actualSize);
+        for (var i = maxSize; i < actualSize; i++ ) {
+            var listItem = listItems[i];
+            listItem.firstChild.setAttribute("data-toggle", "tab");
+            items += listItem.outerHTML;
+            listItem.remove();
+        }
+
+        list.append(
+            "<li class=\"dropdown\">" +
+        "<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">More <b class=\"caret\"></b></a>" +
+        "<ul class=\"dropdown-menu\">" + items + "</ul> </li>"
+        );
+    }
 });
