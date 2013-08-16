@@ -15,3 +15,22 @@
 .content{
   padding:5px;
 }
+
+.profile-vertical > * {
+  border: 1px solid @nav-tabs-active-link-hover-border-color;
+
+  &:not(:last-child)
+  {
+    border-bottom-width: 0px;
+  }
+
+  &:first-child
+  {
+    border-radius: @input-border-radius @input-border-radius 0 0;
+  }
+
+  &:last-child
+  {
+    border-radius: 0 0 @input-border-radius @input-border-radius;
+  }
+}

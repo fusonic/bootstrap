@@ -7,19 +7,6 @@
 @import "filter.less";
 @import "profile.less";
 
-@media (max-width: @screen-xsmall)
-{
-  .border-large
-  {
-    border-radius:0;
-  }
-
-  .horicontal-center-80 // horizontal
-  {
-    margin-left:0%;
-    margin-right:0%;
-  }
-}
 //FIX
 #search-bar > {
   .input-group-btn {
@@ -32,4 +19,41 @@
       width: 100%;
     }
   }
+}
+#navaccordion {
+  div.panel-body{
+    padding:0px;
+  }
+  i{
+    .pull-right;
+  }
+  button {
+    .text-left;
+    border-radius: 0px;
+    .full-width;
+  }
+  a{
+    i{
+
+    }
+    &:not(.collapsed){
+      i{
+
+      }
+    }
+  }
+}
+
+.subnav{
+  font-size: 10px;
+}
+.preview-panel{
+  margin: 50px;
+}
+#login-row{
+  margin: 0px -15px;
+}
+#login-form{
+  margin: 15px;
+  margin-bottom: 0;
 }

@@ -44,7 +44,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In <b class="caret"></b></a>
                     <!--Dropdown Login-->
                     <div class="dropdown-menu dropdown-content-menu">
-                        <form class="form-inline">
+                        <form>
                             <div class="form-group form-group-vertical">
                                 <input type="text" class="form-control" placeholder="Email">
                                 <input type="password" class="form-control" placeholder="Password">
@@ -78,46 +78,41 @@
 <!--Navbar2-->
 <!-- Modal for signing in-->
 <div class="modal fade" id="loginModal">
-    <div class="modal-dialog text-center">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4>You are not logged in!</h4>
+                <h4 class="text-center">You are not logged in!</h4>
             </div>
             <div class="modal-body">
-                <div><h4>Log in here:</h4></div>
-                <form class="form-inline horicontal-center-80">
-                    <div>
+                    <h4 class="text-center">Log in here:</h4>
+                    <form role="form">
                         <div class="form-group form-group-vertical">
                             <input type="text" class="form-control" placeholder="Email">
                             <input type="password" class="form-control" placeholder="Password">
                         </div>
-                        <div class="form-group pull-left">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Remember me
-                                </label>
-                            </div>
+                        <div class="checkbox form-group">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
                         </div>
                         <div class="form-group">
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary full-width"><strong>Log in</strong></button>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group text-center">
                                 <button type="submit" class="btn btn-info horicontal-center-80">Need a account? Sign up here.</button>
                             </div>
                             <div class="form-group">
                                 <div class="text-center">or login with</div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left"><i class="icon-facebook-sign"></i> Facebook</button></div>
-                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left"><i class="icon-google-plus-sign"></i> Google</button></div>
-                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left"><i class="icon-twitter-sign"></i> Twitter</button></div>
+                            <div id="login-row" class="row">
+                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left btn-stacked"><i class="icon-facebook-sign"></i> Facebook</button></div>
+                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left btn-stacked"><i class="icon-google-plus-sign"></i> Google</button></div>
+                                <div class="col-sm-4"><button type="button" class="btn btn-default btn-block text-left btn-stacked"><i class="icon-twitter-sign"></i> Twitter</button></div>
                             </div>
                         </div>
-
-                    </div>
-                </form>
+                    </form>
             </div>
         </div>
     </div>

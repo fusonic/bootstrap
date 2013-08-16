@@ -23,49 +23,81 @@
     <script src="../js/transition.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="panel-group" id="accordion">
-    <div class="panel">
-        <div class="panel-heading">
-            <h3 class="panel-title">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    Persönliche Daten
-                </a>
-            </h3>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in">
-            <div class="panel-body">
-DATN
+<div class="row">
+    <div class="col-sm-3">
+        <div class="panel-group" id="navaccordion">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#navaccordion" href="#collapseOne">
+                            Daten <i class="icon-caret-down"></i>
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div>
+                            <button type="button" class="btn btn-default">Mein Profil <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Kontakte <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Avatar <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Nachrichten <i class="icon-caret-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#navaccordion" href="#collapseTwo">
+                            Inhalte <i class="icon-caret-right"></i>
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div>
+                            <button type="button" class="btn btn-default">Mein Profil <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Kontakte <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Avatar <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Nachrichten <i class="icon-caret-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#navaccordion" href="#collapseThree">
+                            Einstellungen <i class="icon-caret-right"></i>
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div>
+                            <button type="button" class="btn btn-default">Mein Profil <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Kontakte <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Avatar <i class="icon-caret-right"></i></button>
+                            <button type="button" class="btn btn-default">Nachrichten <i class="icon-caret-right"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="panel">
-        <div class="panel-heading">
-            <h3 class="panel-title">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                    Persönliche Inhalte
-                </a>
-            </h3>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse">
+    <div class="col-sm-9">
+        <div class="panel">
+            <div class="panel-heading">Example Settings</div>
             <div class="panel-body">
-INHALTE
+                <p>SETTINGS</p>
+                <p>SETTINGS</p>
+                <p>SETTINGS</p>
+                SETTINGS
             </div>
         </div>
-    </div>
-    <div class="panel">
-        <div class="panel-heading">
-            <h3 class="panel-title">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                    Persönliche Einstellungen
-                </a>
-            </h3>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse">
-            <div class="panel-body">
-SETTINGS
-            </div>
-        </div>
+
     </div>
 </div>
 </body>
+<script src="../js/test.js" type="text/javascript"></script>
 </html>
