@@ -6,6 +6,7 @@
 @import "buttons-custom.less";
 @import "filter.less";
 @import "profile.less";
+@import "fontawesome/font-awesome.less";
 
 //FIX
 #search-bar > {
@@ -32,13 +33,23 @@
     border-radius: 0px;
     .full-width;
   }
-  a{
-    i{
-
+  a {
+    > i{
+        position:relative;
+    &:before {
+      content: "\f0da";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: none;
+      }
     }
     &:not(.collapsed){
-      i{
-
+      > i{
+        position:relative;
+        &:before {
+          content: "\f0d7";
+        }
       }
     }
   }
@@ -53,7 +64,10 @@
 #login-row{
   margin: 0px -15px;
 }
-#login-form{
+#preview-form {
   margin: 15px;
   margin-bottom: 0;
+}
+#input-text-fixed{
+  height: 33.60000002384186px;
 }
