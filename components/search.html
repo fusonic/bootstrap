@@ -23,7 +23,7 @@
 </head>
 <body>
 <!--Searchbar-->
-<div class="panel preview-panel">
+<div class="panel panel-default preview-panel">
     <div class="panel-heading">Search Preview</div>
     <div id="preview-form">
         <form>
@@ -45,23 +45,13 @@
                         </a></li>
                     </ul>
                 </div><!-- /btn-group -->
-                <input type="text" class="form-control" id="input-text-fixed">
+                <input type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="button"><i class="icon-search"></i></button>
                     </span>
             </div><!-- /input-group -->
         </form>
         <!--Searchbar-->
-
-        <script>
-            $(function() {
-                $(".dropdown-menu a.checkbox.filter").click(function(e) {
-                    e.stopPropagation();
-                });
-
-            });
-        </script>
-
         <!--Options Bar-->
         <div class="well well-sm">
             <div id="search-bar" class="input-group">
@@ -145,8 +135,8 @@
             </div>
         </div>
         <!--Results-->
-</div>
+    </div>
 </div>
 </body>
-    <script src="../js/test.js" type="text/javascript"></script>
+    <script src="../js/search.js" type="text/javascript"></script>
 </html>

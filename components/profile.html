@@ -21,19 +21,19 @@
     <script src="../js/scrollspy.js" type="text/javascript"></script>
     <script src="../js/tooltip.js" type="text/javascript"></script>
     <script src="../js/transition.js" type="text/javascript"></script>
+    <script src="/jquery.ba-dotimeout.js"></script>
 </head>
 <body>
-<div class="panel preview-panel">
-    <div class="panel-heading">Profile preview</div>
+
 <div id="button-header" class="form-group">
     <div class="pull-left">
         <button type="button" class="btn btn-default btn-sm">+ Friend</button>
         <button type="button" class="btn btn-default btn-sm"><i class="icon-envelope-alt"></i> Message</button>
     </div>
     <div>
-    <button type="button" class="btn btn-default pull-right"><i class="icon-pencil"></i> Edit Profile</button>
+        <button type="button" class="btn btn-default pull-right"><i class="icon-pencil"></i> Edit Profile</button>
     </div>
-    <div style="display: block; clear: both;"></div>
+    <div style="display: block; clear: both;"></div> <!-- cleared div for proper float display-->
 </div>
     <div class="profile-vertical">
         <div  id="important-content" class="media">
@@ -50,21 +50,33 @@
         </div>
         <div id="navbar-content">
            <ul id="navbar" class="nav nav-tabs">
-                <li class="active"><a href="#news-feed">News Feed</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#photos">Photos</a></li>
-                <li><a href="#favorites">Favorites</a></li>
-                <li><a href="#friends">Friends</a></li>
-                <li><a href="#some">Some</a></li>
-                <li><a href="#more">More</a></li>
-                <li><a href="#things">Things</a></li>
+                <li class="active"><a href="#news-feed" data-toggle="tab">News Feed</a></li>
+                <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                <li><a href="#photos" data-toggle="tab">Photos</a></li>
+                <li><a href="#favorites" data-toggle="tab">Favorites</a></li>
+                <li><a href="#friends" data-toggle="tab">Friends</a></li>
+                <li><a href="#some" data-toggle="tab">Some</a></li>
+                <li><a href="#things" data-toggle="tab">Things</a></li>
+                <li><a href="#things" data-toggle="tab">That</a></li>
+                <li><a href="#things" data-toggle="tab">Dont</a></li>
+                <li><a href="#things" data-toggle="tab">Even</a></li>
+                <li><a href="#things" data-toggle="tab">Show</a></li>
+                <li><a href="#things" data-toggle="tab">Anything</a></li>
+                <li><a href="#things" data-toggle="tab">Else</a></li>
+                <li><a href="#things" data-toggle="tab">Than</a></li>
+                <li><a href="#things" data-toggle="tab">Things</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle indicator" data-toggle="dropdown">More <b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    </ul>
+                </li>
            </ul>
            <div class="content">
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade in active" id="news-feed">
                         <div class="media">
                             <a class="pull-left" href="#">
-                                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+                                <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
                             </a>
                             <div class="media-body">
                                 <h4 class="media-heading">User</h4>
@@ -121,7 +133,6 @@
             </div>
         </div>
     </div>
-</div>
 </body>
-    <script src="../js/test.js" type="text/javascript"></script>
+    <script src="../js/navbar.js" type="text/javascript"></script>
 </html>

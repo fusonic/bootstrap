@@ -1,0 +1,32 @@
+#detail-breadcrums{
+  padding-bottom: 0;
+  padding-left: 0;
+  margin: 0px;
+  background-color: transparent;
+}
+.detail-heading{
+  display: inline-block;
+  vertical-align: middle;
+}
+#detail-username{
+  font-size: @font-size-small;
+}
+@media (max-width: @screen-xs){
+  .detail-body{
+    .full-width;
+    >img{
+      position: relative;
+      left: 50%;
+      margin-left: -50px
+    }
+  }
+}
+.widgets-right{
+  float: right;
+}
+@media (max-width: @screen-sm) {
+  .widgets-right{
+    float: left;
+    margin-top: 5px;
+  }
+}

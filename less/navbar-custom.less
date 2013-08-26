@@ -2,3 +2,17 @@
   height: (@navbar-height*0.8);
   margin: -@navbar-padding-vertical 0;
 }
+.subnav{
+  font-size: 10px;
+}
+@media (max-width: @screen-sm){
+  .navbar-hidden-collapsed{
+    display:none !important;
+  }
+  .navbar-default .navbar-form{
+    margin: 0;
+  }
+}
+.navbar-default .navbar-form{
+  border-width: 0;
+}
