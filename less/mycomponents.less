@@ -12,44 +12,37 @@
 @import "grid-custom.less";
 @import "detail-page.less";
 @import "panels-custom.less";
+@import "table-custom.less";
+@import "forum.less";
 //TESTING AND PREVIEV STUFF
 .preview-panel{
   margin: 50px;
 }
 #preview-form {
   margin: 15px;
-  margin-bottom: 0;
 }
-.test{
-
+.forum-profile-left{
+  border-right: 1px solid @panel-default-border;
 }
-.table-forum{
-  .no-margin-bottom;
-  td{
-    vertical-align: middle !important;
-  }
-  th{
-    width: 12.5%;
-    &:first-child{
-      padding-left: 15px;
-      width: 37.5%;
+.inline{
+  display: inline-block;
+  vertical-align: top;
+}
+.bottom-right{
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+.forum-header{
+  position: relative;
+}
+.forum-picture{
+  height: 100px;
+}
+.btn-group-justified-search{
+  div:not(:first-child):not(:last-child){
+    a{
+      border-radius: 0px;
     }
-    &:last-child{
-      width: 37.5%;
-    }
-  }
-  td:first-child{
-    padding-left: 15px;
-  }
-}
-.forum-username{
-  font-size: 10px;
-}
-@media (max-width: @screen-sm) {
- .table-forum th:not(:first-child):not(:last-child){
-   display: none;
- }
- .table-forum td:not(:first-child):not(:last-child){
-    display: none;
   }
 }

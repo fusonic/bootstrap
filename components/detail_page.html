@@ -22,9 +22,9 @@
     <script src="../js/tooltip.js" type="text/javascript"></script>
     <script src="../js/transition.js" type="text/javascript"></script>
 </head>
-<body style="margin:50px;">
-<div class="panel panel-default">
-    <div class="panel-heading">
+<body style="margin: 50px;">
+<div>
+    <div>
         <h3 class="panel-title">
             <img style="height:50px;" src="http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.med.png" class="img-thumbnail">
             <div class="detail-heading">
@@ -38,23 +38,27 @@
             <li class="active">Data</li>
         </ol>
     </div>
-    <div class="panel-heading">
-            <button type="button" class="btn btn-default">Those</button>
-            <button type="button" class="btn btn-primary">Should</button>
-            <button type="button" class="btn btn-success">Be</button>
-            <button type="button" class="btn btn-info">Some</button>
-            <button type="button" class="btn btn-warning">Example</button>
-            <button type="button" class="btn btn-danger">Widgets</button>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6">
+                <button type="button" class="btn btn-default">Those</button>
+                <button type="button" class="btn btn-primary">Should</button>
+                <button type="button" class="btn btn-success">Be</button>
+        </div>
+        <div class="col-sm-6">
+            <div class="widgets-right">
+                <button type="button" class="btn btn-info">Some</button>
+                <button type="button" class="btn btn-warning">Example</button>
+                <button type="button" class="btn btn-danger">Widgets</button>
+            </div>
+        </div>
     </div>
-    <div class="panel-body">
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img class="media-object" data-src="holder.js/64x64" alt="64x64"
-                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACq0lEQVR4Xu2Y60tiURTFlyaKmqiJGCYSlinkI0XRyH/dD6KoVER+kEJCRNI++ECoRMPHzN6QjAMzTecSE7oPCJLefe5aZ+39s6sbDodLbPHSiQGSAGkBmQFbPAMhQ1AoIBQQCggFhAJb7IBgUDAoGBQMCga3GALyz5BgUDAoGBQMCgYFg1vsgGYMPj8/4+7uDi8vLzCbzQiHw3A6nWuW3t/f4/HxET6fjz//aH1FzT/tqcmA+XyOcrkMvV6Pg4MDFknr4uICOp2O35OYq6srLBaLfzLgK2r+zXBNBvR6PdRqNZydnWFvb49F7uzsrMTTxiTearWi2+2uDGi1Wnh4eEAikYDL5QIlpNPpIJVK4e3tTanmR6n6kgQ0m03Qi06fBBoMBoRCIezv7/N+T09PaDQayGazKBaLKwOWyyUbM5vNcHp6iuvra/j9fgSDQa6nUvO/GEDi2u02nyL1N53qZDJBLpfjFFB7BAIBNiifz6+1AM2My8tLbh+TyYRMJsPvtdRUMUFTC5BgijNF1+Fw8AygOCeTSfT7fQwGA/6MVqFQgNfrxcnJCSeF1s3NDX7+FMfx8TEODw/5b1prftYETQZQxOv1OqLRKDweD6eBTjCdTq/I8PsNud1uxONxNuj29pbnw3Q6xfn5OSdBS83PiqfvazKAerhUKsFoNHK8yQBaJOb19RU00WlRz9Npk/ijoyMWWq1WYbFYEIlEUKlUeIjGYjGeCyo1d3d3VfRrM4B2HI1GHPvxeAybzcYRt9vtazdDBvw6A+h3Aw1NGo6UgPfkvCdJpaaSeq0JUN30O12nqQW+kxDVexED5ImQPBGSJ0LyREh1gm7CdUIBoYBQQCggFNiEaa6qQSggFBAKCAWEAqoTdBOuEwoIBYQCQgGhwCZMc1UNQoFtp8APIl5vn9WEdK4AAAAASUVORK5CYII="
-                     style="height: 100px;">
+    <hr>
+    <div>
+        <div class="media detail-body">
+            <a class="pull-left detail-body" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACq0lEQVR4Xu2Y60tiURTFlyaKmqiJGCYSlinkI0XRyH/dD6KoVER+kEJCRNI++ECoRMPHzN6QjAMzTecSE7oPCJLefe5aZ+39s6sbDodLbPHSiQGSAGkBmQFbPAMhQ1AoIBQQCggFhAJb7IBgUDAoGBQMCga3GALyz5BgUDAoGBQMCgYFg1vsgGYMPj8/4+7uDi8vLzCbzQiHw3A6nWuW3t/f4/HxET6fjz//aH1FzT/tqcmA+XyOcrkMvV6Pg4MDFknr4uICOp2O35OYq6srLBaLfzLgK2r+zXBNBvR6PdRqNZydnWFvb49F7uzsrMTTxiTearWi2+2uDGi1Wnh4eEAikYDL5QIlpNPpIJVK4e3tTanmR6n6kgQ0m03Qi06fBBoMBoRCIezv7/N+T09PaDQayGazKBaLKwOWyyUbM5vNcHp6iuvra/j9fgSDQa6nUvO/GEDi2u02nyL1N53qZDJBLpfjFFB7BAIBNiifz6+1AM2My8tLbh+TyYRMJsPvtdRUMUFTC5BgijNF1+Fw8AygOCeTSfT7fQwGA/6MVqFQgNfrxcnJCSeF1s3NDX7+FMfx8TEODw/5b1prftYETQZQxOv1OqLRKDweD6eBTjCdTq/I8PsNud1uxONxNuj29pbnw3Q6xfn5OSdBS83PiqfvazKAerhUKsFoNHK8yQBaJOb19RU00WlRz9Npk/ijoyMWWq1WYbFYEIlEUKlUeIjGYjGeCyo1d3d3VfRrM4B2HI1GHPvxeAybzcYRt9vtazdDBvw6A+h3Aw1NGo6UgPfkvCdJpaaSeq0JUN30O12nqQW+kxDVexED5ImQPBGSJ0LyREh1gm7CdUIBoYBQQCggFNiEaa6qQSggFBAKCAWEAqoTdBOuEwoIBYQCQgGhwCZMc1UNQoFtp8APIl5vn9WEdK4AAAAASUVORK5CYII=" style="height: 100px;">
             </a>
-
-            <div class="media-body">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel lectus odio. Nam volutpat elit
                 velit, sit amet tincidunt nulla hendrerit a. Proin tristique dui nunc, vitae volutpat enim feugiat eu.
                 Vestibulum ut adipiscing erat. Sed consequat justo quis viverra consectetur. Praesent ligula ipsum,
@@ -70,28 +74,18 @@
                 condimentum magna hendrerit in. Nam in adipiscing nibh, sed cursus risus. Pellentesque venenatis, augue
                 sed vestibulum interdum, risus metus pharetra tortor, a congue sapien odio et odio. Vestibulum vulputate
                 sem vehicula vehicula dictum.
-            </div>
         </div>
     </div>
-    <div class="panel-footer">
-            <button type="button" class="btn btn-default">Those</button>
-            <button type="button" class="btn btn-primary">Should</button>
-            <button type="button" class="btn btn-success">Be</button>
-            <button type="button" class="btn btn-info">Some</button>
-            <button type="button" class="btn btn-warning">Example</button>
-            <button type="button" class="btn btn-danger">Widgets</button>
-    </div>
+    <hr>
 </div>
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Comments</h3>
+<div>
+    <div>
+        <h3>Comments</h3>
     </div>
-    <div class="panel-body">
+    <div>
         <div class="media">
             <a class="pull-left" href="#">
-                <img class="media-object" data-src="holder.js/64x64" alt="64x64"
-                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACq0lEQVR4Xu2Y60tiURTFlyaKmqiJGCYSlinkI0XRyH/dD6KoVER+kEJCRNI++ECoRMPHzN6QjAMzTecSE7oPCJLefe5aZ+39s6sbDodLbPHSiQGSAGkBmQFbPAMhQ1AoIBQQCggFhAJb7IBgUDAoGBQMCga3GALyz5BgUDAoGBQMCgYFg1vsgGYMPj8/4+7uDi8vLzCbzQiHw3A6nWuW3t/f4/HxET6fjz//aH1FzT/tqcmA+XyOcrkMvV6Pg4MDFknr4uICOp2O35OYq6srLBaLfzLgK2r+zXBNBvR6PdRqNZydnWFvb49F7uzsrMTTxiTearWi2+2uDGi1Wnh4eEAikYDL5QIlpNPpIJVK4e3tTanmR6n6kgQ0m03Qi06fBBoMBoRCIezv7/N+T09PaDQayGazKBaLKwOWyyUbM5vNcHp6iuvra/j9fgSDQa6nUvO/GEDi2u02nyL1N53qZDJBLpfjFFB7BAIBNiifz6+1AM2My8tLbh+TyYRMJsPvtdRUMUFTC5BgijNF1+Fw8AygOCeTSfT7fQwGA/6MVqFQgNfrxcnJCSeF1s3NDX7+FMfx8TEODw/5b1prftYETQZQxOv1OqLRKDweD6eBTjCdTq/I8PsNud1uxONxNuj29pbnw3Q6xfn5OSdBS83PiqfvazKAerhUKsFoNHK8yQBaJOb19RU00WlRz9Npk/ijoyMWWq1WYbFYEIlEUKlUeIjGYjGeCyo1d3d3VfRrM4B2HI1GHPvxeAybzcYRt9vtazdDBvw6A+h3Aw1NGo6UgPfkvCdJpaaSeq0JUN30O12nqQW+kxDVexED5ImQPBGSJ0LyREh1gm7CdUIBoYBQQCggFNiEaa6qQSggFBAKCAWEAqoTdBOuEwoIBYQCQgGhwCZMc1UNQoFtp8APIl5vn9WEdK4AAAAASUVORK5CYII="
-                     style="width: 64px; height: 64px;">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACq0lEQVR4Xu2Y60tiURTFlyaKmqiJGCYSlinkI0XRyH/dD6KoVER+kEJCRNI++ECoRMPHzN6QjAMzTecSE7oPCJLefe5aZ+39s6sbDodLbPHSiQGSAGkBmQFbPAMhQ1AoIBQQCggFhAJb7IBgUDAoGBQMCga3GALyz5BgUDAoGBQMCgYFg1vsgGYMPj8/4+7uDi8vLzCbzQiHw3A6nWuW3t/f4/HxET6fjz//aH1FzT/tqcmA+XyOcrkMvV6Pg4MDFknr4uICOp2O35OYq6srLBaLfzLgK2r+zXBNBvR6PdRqNZydnWFvb49F7uzsrMTTxiTearWi2+2uDGi1Wnh4eEAikYDL5QIlpNPpIJVK4e3tTanmR6n6kgQ0m03Qi06fBBoMBoRCIezv7/N+T09PaDQayGazKBaLKwOWyyUbM5vNcHp6iuvra/j9fgSDQa6nUvO/GEDi2u02nyL1N53qZDJBLpfjFFB7BAIBNiifz6+1AM2My8tLbh+TyYRMJsPvtdRUMUFTC5BgijNF1+Fw8AygOCeTSfT7fQwGA/6MVqFQgNfrxcnJCSeF1s3NDX7+FMfx8TEODw/5b1prftYETQZQxOv1OqLRKDweD6eBTjCdTq/I8PsNud1uxONxNuj29pbnw3Q6xfn5OSdBS83PiqfvazKAerhUKsFoNHK8yQBaJOb19RU00WlRz9Npk/ijoyMWWq1WYbFYEIlEUKlUeIjGYjGeCyo1d3d3VfRrM4B2HI1GHPvxeAybzcYRt9vtazdDBvw6A+h3Aw1NGo6UgPfkvCdJpaaSeq0JUN30O12nqQW+kxDVexED5ImQPBGSJ0LyREh1gm7CdUIBoYBQQCggFNiEaa6qQSggFBAKCAWEAqoTdBOuEwoIBYQCQgGhwCZMc1UNQoFtp8APIl5vn9WEdK4AAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
             </a>
 
             <div class="media-body">
@@ -103,9 +97,7 @@
         </div>
         <div class="media">
             <a class="pull-left" href="#">
-                <img class="media-object" data-src="holder.js/64x64" alt="64x64"
-                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACq0lEQVR4Xu2Y60tiURTFlyaKmqiJGCYSlinkI0XRyH/dD6KoVER+kEJCRNI++ECoRMPHzN6QjAMzTecSE7oPCJLefe5aZ+39s6sbDodLbPHSiQGSAGkBmQFbPAMhQ1AoIBQQCggFhAJb7IBgUDAoGBQMCga3GALyz5BgUDAoGBQMCgYFg1vsgGYMPj8/4+7uDi8vLzCbzQiHw3A6nWuW3t/f4/HxET6fjz//aH1FzT/tqcmA+XyOcrkMvV6Pg4MDFknr4uICOp2O35OYq6srLBaLfzLgK2r+zXBNBvR6PdRqNZydnWFvb49F7uzsrMTTxiTearWi2+2uDGi1Wnh4eEAikYDL5QIlpNPpIJVK4e3tTanmR6n6kgQ0m03Qi06fBBoMBoRCIezv7/N+T09PaDQayGazKBaLKwOWyyUbM5vNcHp6iuvra/j9fgSDQa6nUvO/GEDi2u02nyL1N53qZDJBLpfjFFB7BAIBNiifz6+1AM2My8tLbh+TyYRMJsPvtdRUMUFTC5BgijNF1+Fw8AygOCeTSfT7fQwGA/6MVqFQgNfrxcnJCSeF1s3NDX7+FMfx8TEODw/5b1prftYETQZQxOv1OqLRKDweD6eBTjCdTq/I8PsNud1uxONxNuj29pbnw3Q6xfn5OSdBS83PiqfvazKAerhUKsFoNHK8yQBaJOb19RU00WlRz9Npk/ijoyMWWq1WYbFYEIlEUKlUeIjGYjGeCyo1d3d3VfRrM4B2HI1GHPvxeAybzcYRt9vtazdDBvw6A+h3Aw1NGo6UgPfkvCdJpaaSeq0JUN30O12nqQW+kxDVexED5ImQPBGSJ0LyREh1gm7CdUIBoYBQQCggFNiEaa6qQSggFBAKCAWEAqoTdBOuEwoIBYQCQgGhwCZMc1UNQoFtp8APIl5vn9WEdK4AAAAASUVORK5CYII="
-                     style="width: 64px; height: 64px;">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACq0lEQVR4Xu2Y60tiURTFlyaKmqiJGCYSlinkI0XRyH/dD6KoVER+kEJCRNI++ECoRMPHzN6QjAMzTecSE7oPCJLefe5aZ+39s6sbDodLbPHSiQGSAGkBmQFbPAMhQ1AoIBQQCggFhAJb7IBgUDAoGBQMCga3GALyz5BgUDAoGBQMCgYFg1vsgGYMPj8/4+7uDi8vLzCbzQiHw3A6nWuW3t/f4/HxET6fjz//aH1FzT/tqcmA+XyOcrkMvV6Pg4MDFknr4uICOp2O35OYq6srLBaLfzLgK2r+zXBNBvR6PdRqNZydnWFvb49F7uzsrMTTxiTearWi2+2uDGi1Wnh4eEAikYDL5QIlpNPpIJVK4e3tTanmR6n6kgQ0m03Qi06fBBoMBoRCIezv7/N+T09PaDQayGazKBaLKwOWyyUbM5vNcHp6iuvra/j9fgSDQa6nUvO/GEDi2u02nyL1N53qZDJBLpfjFFB7BAIBNiifz6+1AM2My8tLbh+TyYRMJsPvtdRUMUFTC5BgijNF1+Fw8AygOCeTSfT7fQwGA/6MVqFQgNfrxcnJCSeF1s3NDX7+FMfx8TEODw/5b1prftYETQZQxOv1OqLRKDweD6eBTjCdTq/I8PsNud1uxONxNuj29pbnw3Q6xfn5OSdBS83PiqfvazKAerhUKsFoNHK8yQBaJOb19RU00WlRz9Npk/ijoyMWWq1WYbFYEIlEUKlUeIjGYjGeCyo1d3d3VfRrM4B2HI1GHPvxeAybzcYRt9vtazdDBvw6A+h3Aw1NGo6UgPfkvCdJpaaSeq0JUN30O12nqQW+kxDVexED5ImQPBGSJ0LyREh1gm7CdUIBoYBQQCggFNiEaa6qQSggFBAKCAWEAqoTdBOuEwoIBYQCQgGhwCZMc1UNQoFtp8APIl5vn9WEdK4AAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
             </a>
 
             <div class="media-body">
@@ -115,9 +107,7 @@
                 fringilla. Donec lacinia congue felis in faucibus.
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <img class="media-object" data-src="holder.js/64x64" alt="64x64"
-                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACq0lEQVR4Xu2Y60tiURTFlyaKmqiJGCYSlinkI0XRyH/dD6KoVER+kEJCRNI++ECoRMPHzN6QjAMzTecSE7oPCJLefe5aZ+39s6sbDodLbPHSiQGSAGkBmQFbPAMhQ1AoIBQQCggFhAJb7IBgUDAoGBQMCga3GALyz5BgUDAoGBQMCgYFg1vsgGYMPj8/4+7uDi8vLzCbzQiHw3A6nWuW3t/f4/HxET6fjz//aH1FzT/tqcmA+XyOcrkMvV6Pg4MDFknr4uICOp2O35OYq6srLBaLfzLgK2r+zXBNBvR6PdRqNZydnWFvb49F7uzsrMTTxiTearWi2+2uDGi1Wnh4eEAikYDL5QIlpNPpIJVK4e3tTanmR6n6kgQ0m03Qi06fBBoMBoRCIezv7/N+T09PaDQayGazKBaLKwOWyyUbM5vNcHp6iuvra/j9fgSDQa6nUvO/GEDi2u02nyL1N53qZDJBLpfjFFB7BAIBNiifz6+1AM2My8tLbh+TyYRMJsPvtdRUMUFTC5BgijNF1+Fw8AygOCeTSfT7fQwGA/6MVqFQgNfrxcnJCSeF1s3NDX7+FMfx8TEODw/5b1prftYETQZQxOv1OqLRKDweD6eBTjCdTq/I8PsNud1uxONxNuj29pbnw3Q6xfn5OSdBS83PiqfvazKAerhUKsFoNHK8yQBaJOb19RU00WlRz9Npk/ijoyMWWq1WYbFYEIlEUKlUeIjGYjGeCyo1d3d3VfRrM4B2HI1GHPvxeAybzcYRt9vtazdDBvw6A+h3Aw1NGo6UgPfkvCdJpaaSeq0JUN30O12nqQW+kxDVexED5ImQPBGSJ0LyREh1gm7CdUIBoYBQQCggFNiEaa6qQSggFBAKCAWEAqoTdBOuEwoIBYQCQgGhwCZMc1UNQoFtp8APIl5vn9WEdK4AAAAASUVORK5CYII="
-                             style="width: 64px; height: 64px;">
+                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACq0lEQVR4Xu2Y60tiURTFlyaKmqiJGCYSlinkI0XRyH/dD6KoVER+kEJCRNI++ECoRMPHzN6QjAMzTecSE7oPCJLefe5aZ+39s6sbDodLbPHSiQGSAGkBmQFbPAMhQ1AoIBQQCggFhAJb7IBgUDAoGBQMCga3GALyz5BgUDAoGBQMCgYFg1vsgGYMPj8/4+7uDi8vLzCbzQiHw3A6nWuW3t/f4/HxET6fjz//aH1FzT/tqcmA+XyOcrkMvV6Pg4MDFknr4uICOp2O35OYq6srLBaLfzLgK2r+zXBNBvR6PdRqNZydnWFvb49F7uzsrMTTxiTearWi2+2uDGi1Wnh4eEAikYDL5QIlpNPpIJVK4e3tTanmR6n6kgQ0m03Qi06fBBoMBoRCIezv7/N+T09PaDQayGazKBaLKwOWyyUbM5vNcHp6iuvra/j9fgSDQa6nUvO/GEDi2u02nyL1N53qZDJBLpfjFFB7BAIBNiifz6+1AM2My8tLbh+TyYRMJsPvtdRUMUFTC5BgijNF1+Fw8AygOCeTSfT7fQwGA/6MVqFQgNfrxcnJCSeF1s3NDX7+FMfx8TEODw/5b1prftYETQZQxOv1OqLRKDweD6eBTjCdTq/I8PsNud1uxONxNuj29pbnw3Q6xfn5OSdBS83PiqfvazKAerhUKsFoNHK8yQBaJOb19RU00WlRz9Npk/ijoyMWWq1WYbFYEIlEUKlUeIjGYjGeCyo1d3d3VfRrM4B2HI1GHPvxeAybzcYRt9vtazdDBvw6A+h3Aw1NGo6UgPfkvCdJpaaSeq0JUN30O12nqQW+kxDVexED5ImQPBGSJ0LyREh1gm7CdUIBoYBQQCggFNiEaa6qQSggFBAKCAWEAqoTdBOuEwoIBYQCQgGhwCZMc1UNQoFtp8APIl5vn9WEdK4AAAAASUVORK5CYII=" style="width: 64px; height: 64px;">
                     </a>
 
                     <div class="media-body">
@@ -131,5 +121,6 @@
         </div>
     </div>
 </div>
+<script src="../js/widgets.js" type="text/javascript"></script>
 </body>
 </html>

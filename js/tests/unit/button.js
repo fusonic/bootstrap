@@ -58,7 +58,7 @@ $(function () {
         ok(btn.hasClass('active'), 'btn has class active')
       })
 
-      test("should toggle active when btn children are clicked", function () {
+      test("should toggle active when btn parent are clicked", function () {
         var btn = $('<button class="btn" data-toggle="button">mdo</button>')
           , inner = $('<i></i>')
         btn
@@ -69,7 +69,7 @@ $(function () {
         ok(btn.hasClass('active'), 'btn has class active')
       })
 
-      test("should toggle active when btn children are clicked within btn-group", function () {
+      test("should toggle active when btn parent are clicked within btn-group", function () {
         var btngroup = $('<div class="btn-group" data-toggle="buttons"></div>')
           , btn = $('<button class="btn">fat</button>')
           , inner = $('<i></i>')

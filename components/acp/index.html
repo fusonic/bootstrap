@@ -43,9 +43,41 @@
             <li><a href="communication">Communication</a></li>
             <li><a href="users">Users</a></li>
             <li><a href="system">System</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation" class="dropdown-header">System</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Systemeinstellungen</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Module</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">RSS - Feeds</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Thumbnaildienste</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registrierungs-Bedingungen</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Suchindex</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="dropdown-header">Wartung & Sicherheit</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cache</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Updates</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Systemprotokoll</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="dropdown-header">Datenbank</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sicherungen</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Datenbank optimieren</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Konsole</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="dropdown-header">Sonstiges</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PHP - Konsole</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Software - Infos</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Server-Informationen</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dateimanager</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Weiterleitungen</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Zugriffskontrolle</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sprachpakete</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Import</a></li>
+                </ul>
+            </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown navbar-hidden-collapsed">
+            <li class="dropdown hidden-xs hidden-sm">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-envelope-alt"></i><span class="badge notification-bage">1</span></b></a>
                 <!--Notification Dropdown-->
                 <div class="dropdown-menu dropdown-content-menu notification-dropdown">
@@ -88,7 +120,7 @@
                 <!--Notification Dropdown-->
             </li>
             <li>
-                <form class="navbar-form navbar-hidden-collapsed" role="search">
+                <form class="navbar-form hidden-xs hidden-sm" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
@@ -96,7 +128,7 @@
                 </form>
             </li>
             <li>
-                <form class="navbar-form full-width" action="..\user_navbar">
+                <form class="navbar-form full-width navbar-fixed-form" action="..\user_navbar">
                     <button class="btn btn-default" type="submit"><i class="icon-signout"></i></button>
                 </form>
             </li>
@@ -244,7 +276,7 @@
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
+        <div class="panel panel-info">
             <div class="panel-heading">Updates</div>
             <div class="panel-body">
                 <div class="media">
@@ -269,7 +301,7 @@
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
+        <div class="panel panel-info">
             <div class="panel-heading">Store</div>
             <div class="panel-body">
                 <div class="media">

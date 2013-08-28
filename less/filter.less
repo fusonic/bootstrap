@@ -1,26 +1,18 @@
-.filter{
-  padding-left: 0px;
-}
-.filter input[type=radio],
-.filter input[type=checkbox] {
+.input-group-btn-filter .dropdown-menu a [type=radio],
+.input-group-btn-filter .dropdown-menu a [type=checkbox] {
   width: 0px;
   height: 0px;
   display: none;
 }
-.filter input[type=radio] + label,
-.filter input[type=checkbox] + label{
-  display: block;
-}
-.filter input[type=radio] + label>i,
-.filter input[type=checkbox] + label>i{
+.input-group-btn-filter .dropdown-menu a input[type=radio]+i,
+.input-group-btn-filter .dropdown-menu a input[type=checkbox]+i{
   float: right;
   margin-left: 10px;
   opacity: 0;
   line-height: inherit;
 }
-
-.filter input[type=radio]:checked + label>i,
-.filter input[type=checkbox]:checked + label>i
+.input-group-btn-filter .dropdown-menu a input[type=radio]:checked +i,
+.input-group-btn-filter .dropdown-menu a input[type=checkbox]:checked +i
 {
   opacity: 1;
 }
