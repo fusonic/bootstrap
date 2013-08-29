@@ -1,16 +1,20 @@
+//makes the breadcrums align right
 #detail-breadcrums{
   padding-bottom: 0;
   padding-left: 0;
   margin: 0px;
   background-color: transparent;
 }
+//makes the heading be displayed inline next to the image
 .detail-heading{
   display: inline-block;
   vertical-align: middle;
 }
+//smaller font-size for the username
 #detail-username{
   font-size: @font-size-small;
 }
+//makes the posted image go into the middle of the page on mobile screens
 @media (max-width: @screen-xs){
   .detail-body{
     .full-width;
@@ -21,6 +25,7 @@
     }
   }
 }
+//makes widgets float right on all big screens, and floats left under the left widgets asa they are placed unter them (tablet)
 .widgets-right{
   float: right;
 }

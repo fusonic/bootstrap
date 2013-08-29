@@ -22,9 +22,7 @@
     <script src="../js/transition.js" type="text/javascript"></script>
 </head>
 <body>
-
 <form method="get" action="search.php">
-
 <!--Searchbar-->
 <div class="panel panel-default preview-panel">
     <div class="panel-heading">Search Preview</div>

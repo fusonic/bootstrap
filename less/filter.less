@@ -1,9 +1,11 @@
+//hides the checkbox/radio
 .input-group-btn-filter .dropdown-menu a [type=radio],
 .input-group-btn-filter .dropdown-menu a [type=checkbox] {
   width: 0px;
   height: 0px;
   display: none;
 }
+//makes the icon float right and be hidden
 .input-group-btn-filter .dropdown-menu a input[type=radio]+i,
 .input-group-btn-filter .dropdown-menu a input[type=checkbox]+i{
   float: right;
@@ -11,6 +13,7 @@
   opacity: 0;
   line-height: inherit;
 }
+//shows the icon asa the checkbox/radio  is checked
 .input-group-btn-filter .dropdown-menu a input[type=radio]:checked +i,
 .input-group-btn-filter .dropdown-menu a input[type=checkbox]:checked +i
 {

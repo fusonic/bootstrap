@@ -1,3 +1,4 @@
+//changes the width of the single rows and makes every table look same
 .table-forum{
   .no-margin-bottom;
   td{
@@ -15,5 +16,19 @@
   }
   td:first-child{
     padding-left: 15px;
+  }
+}
+//removes double border on heading and sets width and color on the first item(s) in the rows
+.table-profile{
+  th{
+    border-bottom: 0px transparent !important;
+  }
+  tr{
+    &:first-child > td:first-child{
+      width: 100px;
+    }
+    > td:first-child{
+      color: @gray-light;
+    }
   }
 }

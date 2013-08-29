@@ -23,116 +23,335 @@
     <script src="../js/transition.js" type="text/javascript"></script>
     <script src="/jquery.ba-dotimeout.js"></script>
 </head>
-<body>
+<body style="margin: 50px;">
 
 <div id="button-header" class="form-group">
     <div class="pull-left">
-        <button type="button" class="btn btn-default btn-sm">+ Friend</button>
+        <button type="button" class="btn btn-default btn-sm">Add as Friend</button>
         <button type="button" class="btn btn-default btn-sm"><i class="icon-envelope-alt"></i> Message</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                More <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Points</a></li>
+                <li><a href="#">Export User as vCard</a></li>
+                <li><a href="#">Add to Interest Group</a></li>
+                <li><a href="#">Follow</a></li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <button type="button" class="btn btn-default pull-right"><i class="icon-pencil"></i> Edit Profile</button>
+    <div class="pull-right">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-cog"></i> Administration <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Login as this user</a></li>
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">Set new password</a></li>
+                <li><a href="#">Permissions</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Avatar</a></li>
+                <li><a href="#">Ban User</a></li>
+                <li><a href="#">Delete</a></li>
+            </ul>
+        </div>
+        <button type="button" class="btn btn-default"><i class="icon-pencil"></i> Edit Profile</button>
     </div>
     <div class="clearfix"></div> <!-- cleared div for proper float display-->
 </div>
-    <div class="profile-vertical">
-        <div  id="important-content" class="media">
-            <a class="pull-left" href="#">
-                <img class="media-object profile-picture" id="pp" src="http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.med.png">
-            </a>
-            <div class="media-body">
-                <h3 class="media-heading">Vorname Nachname</h3>
-                <h5 class="media-heading"><i class="icon-phone"></i> Telephone +123456789</h5>
-                <h5 class="media-heading"><i class="icon-envelope-alt"></i> Email</h5>
-                <h5 class="media-heading"><i class="icon-home"></i> Hompage</h5>
-                <h5 class="media-heading"><i class="icon-male"></i> Male</h5>
-            </div>
+<div class="profile-vertical">
+    <div class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object profile-picture" style="margin-left: -50px;" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/v/1174357_650693971616576_285968361_n.jpg?oh=6eae822034f38a7fb763bc288b851eba&oe=521FF792&__gda__=1377856062_9607ccd5959d07948442d782e887b213">
+        </a>
+        <div class="media-body">
+            <h3 class="media-heading profile-heading">Clemens Himmer</h3>
+            <h5 class="media-heading"><i class="icon-phone icon-fixed-width"></i>+43 650 133781734</h5>
+            <h5 class="media-heading"><i class="icon-envelope-alt icon-fixed-width"></i>clemens.himmer@hotmail.com</h5>
+            <h5 class="media-heading"><i class="icon-home icon-fixed-width"></i>http://www.youtube.com/SuperbEssentials</h5>
+            <h5 class="media-heading"><i class="icon-male icon-fixed-width"></i>Male</h5>
         </div>
-        <div id="navbar-content">
-           <ul id="navbar" class="nav nav-tabs">
-                <li class="active"><a href="#news-feed" data-toggle="tab">News Feed</a></li>
-                <li><a href="#profile" data-toggle="tab">Profile</a></li>
-                <li><a href="#photos" data-toggle="tab">Photos</a></li>
-                <li><a href="#favorites" data-toggle="tab">Favorites</a></li>
-                <li><a href="#friends" data-toggle="tab">Friends</a></li>
-                <li><a href="#some" data-toggle="tab">Some</a></li>
-                <li><a href="#things" data-toggle="tab">Things</a></li>
-                <li><a href="#things" data-toggle="tab">That</a></li>
-                <li><a href="#things" data-toggle="tab">Dont</a></li>
-                <li><a href="#things" data-toggle="tab">Even</a></li>
-                <li><a href="#things" data-toggle="tab">Show</a></li>
-                <li><a href="#things" data-toggle="tab">Anything</a></li>
-                <li><a href="#things" data-toggle="tab">Else</a></li>
-                <li><a href="#things" data-toggle="tab">Than</a></li>
-                <li><a href="#things" data-toggle="tab">Things</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle indicator" data-toggle="dropdown">More <b class="caret"></b></a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    </ul>
-                </li>
-           </ul>
-           <div class="content">
-                <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane fade in active" id="news-feed">
-                        <div class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+    </div>
+    <div id="navbar-content">
+        <ul id="navbar" class="nav nav-tabs">
+            <li class="active"><a href="#news-feed" data-toggle="tab">News Feed</a></li>
+            <li><a href="#profile" data-toggle="tab">Profile</a></li>
+            <li><a href="#photos" data-toggle="tab">Photos</a></li>
+            <li><a href="#friends" data-toggle="tab">Friends</a></li>
+            <li><a href="#favorites" data-toggle="tab">Favorites</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle indicator" data-toggle="dropdown">More<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                </ul>
+            </li>
+        </ul>
+        <div class="content">
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="news-feed">
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">User</h4>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Another User</h4>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">User</h4>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Another User</h4>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">User</h4>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Another User</h4>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile">
+                    <table class="table table-hover table-striped table-profile">
+                        <thead>
+                        <tr>
+                            <th>General</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>Clemens</td>
+                        </tr>
+                        <tr>
+                            <td>Surname</td>
+                            <td>Himmer</td>
+                        </tr>
+                        <tr>
+                            <td>Birthday</td>
+                            <td>12.07.1995 (18)</td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>Male</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-hover table-striped table-profile">
+                        <thead>
+                        <tr>
+                            <th>Work</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Employer</td>
+                            <td>fusonic</td>
+                        </tr>
+                        <tr>
+                            <td>Working since</td>
+                            <td>2013</td>
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>intern</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-hover table-striped table-profile">
+                        <thead>
+                        <tr>
+                            <th>Kontakt</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Street</td>
+                            <td>Elm Street</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+43 650 133781734</td>
+                        </tr>
+                        <tr>
+                            <td>E-Mail</td>
+                            <td>clemens.himmer@hotmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Homepage</td>
+                            <td>http://www.youtube.com/SuperbEssentials</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="photos">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="#" class="thumbnail">
+                                <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/v/1232893_650692808283359_1434273989_n.jpg?oh=27bb7345d5b235b741ee94ad61b29bd9&oe=522118BC&__gda__=1377908520_b95ca9a2c69f3d9b4c4ec4ee1bd190bf">
                             </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">User</h4>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                <div class="media">
-                                    <a class="pull-left" href="#">
-                                        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqUlEQVR4Xu2Y60tiURTFl48STFJMwkQjUTDtixq+Av93P6iBJFTgg1JL8QWBGT4QfDX7gDIyNE3nEBO6D0Rh9+5z9rprr19dTa/XW2KHl4YFYAfwCHAG7HAGgkOQKcAUYAowBZgCO6wAY5AxyBhkDDIGdxgC/M8QY5AxyBhkDDIGGYM7rIAyBgeDAYrFIkajEYxGIwKBAA4PDzckpd+322243W54PJ5P5f6Omh9tqiTAfD5HNpuFVqvFyckJms0m9vf3EY/H1/u9vb0hn89jsVj8kwDfUfNviisJ8PLygru7O4TDYVgsFtDh9Xo9NBrNes9cLgeTybThgKenJ1SrVXGf1WoVDup2u4jFYhiPx1I1P7XVBxcoCVCr1UBfTqcTrVYLe3t7OD8/x/HxsdiOPqNGo9Eo0un02gHkBhJmuVzC7/fj5uYGXq8XZ2dnop5Mzf8iwMPDAxqNBmw2GxwOBx4fHzGdTpFMJkVzNB7UGAmSSqU2RoDmnETQ6XQiOyKRiHCOSk0ZEZQcUKlU8Pz8LA5vNptRr9eFCJQBFHq//szG5eWlGA1ywOnpqQhBapoWPfl+vw+fzweXyyU+U635VRGUBOh0OigUCggGg8IFK/teXV3h/v4ew+Hwj/OQU4gUq/w4ODgQrkkkEmKEVGp+tXm6XkkAOngmk4HBYBAjQA6gEKRmyOL05GnR99vbW9jtdjEGdP319bUIR8oA+pnG5OLiQoghU5OElFlKAtCGr6+vKJfLmEwm64aosd/XbDbbyIBSqSSeNKU+HXzlnFAohKOjI6maMs0rO0B20590n7IDflIzMmdhAfiNEL8R4jdC/EZIJj235R6mAFOAKcAUYApsS6LL9MEUYAowBZgCTAGZ9NyWe5gCTAGmAFOAKbAtiS7TB1Ng1ynwDkxRe58vH3FfAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Another User</h4>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#" class="thumbnail">
+                                <img src="https://sphotos-a.xx.fbcdn.net/hphotos-ash3/q71/s720x720/1185618_663817450296136_134055942_n.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#" class="thumbnail">
+                                <img src="https://sphotos-b.xx.fbcdn.net/hphotos-ash4/s720x720/294899_2817368851900_2111241658_n.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="#" class="thumbnail">
+                                <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/v/1097360_650693761616597_849730125_n.jpg?oh=8a5e0707a545a539d52c6230154a46ac&oe=52209C08&__gda__=1377921001_743d655f63a7d4e0a72cc924923efb87">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="favorites">
+                    <img style="height:150px;" src="http://images.wikia.com/fantendo/images/2/26/Star.PNG">
+                </div>
+                <div class="tab-pane fade" id="friends">
+                    <div class="row margin-bottom-10">
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c15.22.191.191/s160x160/559006_378543545554577_1280404208_n.jpg">
+                                <div class="caption">
+                                    <p>Karolina Hoheisl</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c235.79.490.490/s160x160/988283_630592156960470_149460084_n.jpg">
+                                <div class="caption">
+                                    <p>Colomba Poggi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c66.109.414.414/s160x160/424653_4855462913069_2099545623_n.jpg">
+                                <div class="caption">
+                                    <p>Sam Hupp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c16.0.389.389/s160x160/560485_3614085710910_1510556760_n.jpg">
+                                <div class="caption">
+                                    <p>Mara Riccarda</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c35.35.442.442/s160x160/601981_640165122669461_2073582728_n.jpg">
+                                <div class="caption">
+                                    <p>Almut Kopf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c207.0.621.621/s160x160/312784_290970194252747_1742020103_n.jpg">
+                                <div class="caption">
+                                    <p>Alex Troy</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile">
-                        <ul class="nav nav-pills subnav">
-                            <li class="active"><a href="#general" data-toggle="pill">General</a></li>
-                            <li><a href="#family" data-toggle="pill">Family</a></li>
-                            <li><a href="#rest" data-toggle="pill">Rest</a></li>
-                        </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="general" style="width: 1019px; padding-left: 0px; ">
-                                    General
-                                </div>
-                                <div class="tab-pane" id="family" style="width: 1019px; padding-left: 0px; ">
-                                    Family
-                                </div>
-                                <div class="tab-pane" id="rest" style="width: 1019px; padding-left: 0px; ">
-                                    Rest
+                    <div class="row margin-bottom-10">
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c15.22.191.191/s160x160/559006_378543545554577_1280404208_n.jpg">
+                                <div class="caption">
+                                    <p>Karolina Hoheisl</p>
                                 </div>
                             </div>
                         </div>
-                    <div class="tab-pane fade" id="photos">
-                        <img style="height:150px;" src="http://www.clker.com/cliparts/5/9/4/c/12198090531909861341man%20silhouette.svg.med.png">
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c235.79.490.490/s160x160/988283_630592156960470_149460084_n.jpg">
+                                <div class="caption">
+                                    <p>Colomba Poggi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c66.109.414.414/s160x160/424653_4855462913069_2099545623_n.jpg">
+                                <div class="caption">
+                                    <p>Sam Hupp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c16.0.389.389/s160x160/560485_3614085710910_1510556760_n.jpg">
+                                <div class="caption">
+                                    <p>Mara Riccarda</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c35.35.442.442/s160x160/601981_640165122669461_2073582728_n.jpg">
+                                <div class="caption">
+                                    <p>Almut Kopf</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="thumbnail">
+                                <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c207.0.621.621/s160x160/312784_290970194252747_1742020103_n.jpg">
+                                <div class="caption">
+                                    <p>Alex Troy</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="favorites">
-                        <img style="height:150px;" src="http://images.wikia.com/fantendo/images/2/26/Star.PNG">
-                    </div>
-                    <div class="tab-pane fade" id="friends">
-                        <p>NO FRIENDS</p>
-                    </div>
-                    <div class="tab-pane fade" id="some">
-                        <p>SOOOOOOME</p>
-                    </div>
-                    <div class="tab-pane fade" id="more">
-                        <p>MOOOOOORE</p>
-                    </div>
-                    <div class="tab-pane fade" id="things">
-                        <p>THIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIINGS</p>
-                    </div>
+                    <div class="text-center"><button type="button" class="btn btn-default">Show more ..</button></div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </body>
-    <script src="../js/navbar.js" type="text/javascript"></script>
+<script src="../js/navbar.js" type="text/javascript"></script>
 </html>

@@ -1,6 +1,4 @@
-.profile-picture{
-  height: 150px;
-}
+//Delete double borders and delete border-radius on tab-nav used in profile
 #navbar>li{
 
   a{
@@ -12,10 +10,11 @@
     border-left:0;
   }
 }
+//add padding to the content to be selected with the tabs
 .content{
   padding:5px;
 }
-
+//add border and border-radius to the whole profile element
 .profile-vertical > div {
   border: 1px solid @nav-tabs-active-link-hover-border-color;
 
@@ -33,4 +32,11 @@
   {
     border-radius: 0 0 @input-border-radius @input-border-radius;
   }
+}
+.profile-heading{
+  margin-top: 10px;
+}
+//Maybe wont be used later due to default image size properties
+.profile-picture{
+  height: 150px;
 }
