@@ -1,29 +1,53 @@
 //sets opacity to unread and read notifications
 .notification-dropdown
 {
-  .notification
-  {
-    &:not(.notification-unread)
+  //removes paggins from custom dropdown
+  padding: 0px !important;
+  #notificationWrapper{
+    //set max height
+    //TODO: set max height
+    max-height: 220px;
+    //default properties from plugin and 300 width from custom dropdown
+    position: relative;
+    margin: 0px auto;
+    padding: 0px;
+    width: 300px;
+    overflow: hidden;
+
+    .notification
     {
-      .opacity(.5);
+      //set margins to all notifications
+      margin-left: 15px;
+      margin-right: 15px;
+      //sets top and bottom margin to first and pseudo-last element
+      &:first-child{
+        margin-top:15px;
+      }
+      &:nth-last-child(3){
+        margin-bottom:15px;
+      }
+      &:not(.notification-unread)
+      {
+        .opacity(.5);
+      }
+
+      small
+      {
+        display: block;
+        padding-top: @padding-base-vertical;
+        font-size: @font-size-small;
+      }
     }
 
-    small
+    >hr
     {
-      display: block;
-      padding-top: @padding-base-vertical;
-      font-size: @font-size-small;
+      margin: @padding-base-vertical 0;
     }
-  }
 
-  >hr
-  {
-    margin: @padding-base-vertical 0;
-  }
-
-  >button
-  {
-    margin-top: @padding-large-vertical;
+    >button
+    {
+      margin-top: @padding-large-vertical;
+    }
   }
 }
 //styles the buttons in a notification message
